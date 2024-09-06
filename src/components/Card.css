@@ -1,0 +1,19 @@
+.imgCardGaleria{
+    width:5rem;
+    align-items: center;
+    padding: 10px;
+}
+
+.styleCard {
+    border: 2px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1em; /* Espaciado interno */
+    width: 300px; /* Ancho fijo */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transición suave para efectos */
+  }
+  
+  .styleCard:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  }

@@ -1,0 +1,83 @@
+.cart {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 200px;
+  text-align: center;
+  margin: 5px auto;
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-around; /* Espacio entre los elementos */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cart:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.titulo-carrito {
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  padding-right: 0.70rem;
+}
+
+.imagen-carrito {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  padding-right: 0.70rem;
+}
+
+.number {
+  font-size: 36px;
+  color: #ff0000f5; 
+  margin: 0;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .cart {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    max-width: 90%; /* Ajusta el ancho máximo en pantallas pequeñas */
+  }
+
+  .titulo-carrito {
+    font-size: 16px; /* Tamaño de fuente más pequeño para pantallas medianas */
+    padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+  }
+
+  .imagen-carrito {
+    width: 50px;
+    height: 50px;
+    padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    margin-bottom: 10px; /* Añade espacio debajo de la imagen */
+  }
+
+  .number {
+    font-size: 28px; /* Tamaño de fuente más pequeño para el número en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-carrito {
+    font-size: 1rem;
+
+  .imagen-carrito {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .number {
+    font-size: 24px; /* Tamaño de fuente aún más pequeño para el número en pantallas pequeñas */
+  }
+}
+}
